@@ -322,26 +322,7 @@ const SkipSizeSelector = () => {
           })}
         </div>
 
-        {/* Help Section */}
-        <div className="mt-8 bg-white rounded-2xl shadow-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Need Help Choosing?
-          </h3>
-          <p className="text-gray-600 mb-6 max-w-md mx-auto">
-            Our experts are here to help you select the perfect skip size for your project
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg">
-              📞 Call: 0800 123 4567
-            </button>
-            <button className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-lg">
-              💬 Live Chat
-            </button>
-            <button className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-semibold shadow-lg">
-              📋 Size Guide
-            </button>
-          </div>
-        </div>
+       
 
         {/* Spacer for fixed bottom bar */}
         <div className="h-24"></div>
