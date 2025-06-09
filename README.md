@@ -83,8 +83,3 @@ The design is fully responsive with:
 - Clearer pricing breakdown
 - Better error handling and loading states
 
-## Future Enhancements
-- Skip size comparison tool
-- Waste type compatibility checker
-- Delivery slot calendar integration
-- Photo upload for waste estimation
