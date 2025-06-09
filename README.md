@@ -36,7 +36,7 @@ With automatic fallback to mock data if the API is unavailable.
 
 ```bash
 # Clone the repository
-git clone [your-repo-url]
+git clone https://github.com/yvesP123/Skip-Size-Selector.git
 
 # Navigate to project directory
 cd skip-size-selector
