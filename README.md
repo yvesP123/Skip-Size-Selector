@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Skip Size Selector - Redesign Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a complete redesign of the "Choose Your Skip Size" page for WeWantWaste. The original page has been reimagined with a modern, user-friendly interface while maintaining all core functionality.
 
-## Available Scripts
+## Design Approach
 
-In the project directory, you can run:
+### Visual Design Philosophy
+- **Light & Bright**: Moved from dark theme to a clean, light design with blue-to-green gradients
+- **Card-Based Layout**: Each skip option is presented as an individual card for better visual separation
+- **3D Skip Visualization**: Custom CSS-based skip containers instead of product photos
+- **Progressive Enhancement**: Subtle animations and hover effects for better user engagement
 
-### `npm start`
+### Key Features
+- **Responsive Design**: Fully responsive grid layout that works on mobile and desktop
+- **Real-time API Integration**: Fetches live data from the WeWantWaste API with fallback handling
+- **Smart Selection**: Visual feedback with checkmarks and border highlighting
+- **Comprehensive Information**: Each skip shows capacity, restrictions, and pricing breakdown
+- **User Guidance**: Help section with contact options and size recommendations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technical Implementation
+- **React Hooks**: Uses useState and useEffect for state management
+- **Error Handling**: Graceful fallback to mock data if API fails
+- **Loading States**: Smooth loading experience with spinners
+- **Accessibility**: Proper ARIA labels and keyboard navigation support
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API Integration
+The component fetches skip data from:
+```
+https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
+```
 
-### `npm test`
+With automatic fallback to mock data if the API is unavailable.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation & Setup
 
-### `npm run build`
+```bash
+# Clone the repository
+git clone [your-repo-url]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Navigate to project directory
+cd skip-size-selector
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start development server
+npm start
+```
 
-### `npm run eject`
+## Technologies Used
+- React 18+ with Hooks
+- Tailwind CSS for styling
+- Lucide React for icons
+- Responsive CSS Grid and Flexbox
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Browser Support
+- Chrome 88+
+- Firefox 85+
+- Safari 14+
+- Edge 88+
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Mobile Responsiveness
+The design is fully responsive with:
+- Adaptive grid layouts (1 column on mobile, 2 on tablet, 3 on desktop)
+- Touch-friendly interaction areas
+- Optimized typography scaling
+- Fixed bottom action bar for easy mobile navigation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Design Decisions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Why This Approach?
+1. **User-Centric**: Prioritized clarity and ease of selection
+2. **Modern Aesthetics**: Clean, contemporary design that feels trustworthy
+3. **Information Hierarchy**: Clear pricing, features, and recommendations
+4. **Visual Consistency**: Cohesive color scheme and typography throughout
+5. **Performance**: Efficient rendering with minimal re-renders
 
-## Learn More
+### Improvements Over Original
+- Better visual hierarchy and readability
+- More intuitive selection process
+- Enhanced mobile experience
+- Clearer pricing breakdown
+- Better error handling and loading states
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Enhancements
+- Skip size comparison tool
+- Waste type compatibility checker
+- Delivery slot calendar integration
+- Photo upload for waste estimation
